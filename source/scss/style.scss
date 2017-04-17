@@ -1,5 +1,9 @@
 @import "_variables";
 
+html * {
+  font-family: $font-family;
+}
+
 h1 {
   font-size: $font-base-size * 2.75;
 }
@@ -47,7 +51,32 @@ textarea {
   border-radius: $border-radius;
 }
 
-.danger {
-  color: $secondary-color;
-  border-color: lighten($secondary-color);
+input.danger {
+  background-color: $secondary-color;
+  border-color: darken($secondary-color, 50%);
+}
+
+figure {
+  border: 5px solid darken($other-color-2, 50%);
+  border-radius: $border-radius;
+}
+
+figcaption {
+  color: $other-color-2;
+}
+
+table {
+  background-color: $other-color-1;
+}
+
+thead {
+  border-color: darken($other-color-1, 10%);
+}
+
+tr {
+  color: darken($other-color-1, 60%);
+}
+
+tbody {
+  background-color: $other-color-2;
 }
